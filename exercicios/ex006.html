@@ -5,45 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         div#area {
             font: normal 2em Arial;
             background-color: green;
-            color: white;
             width: 200px;
             height: 200px;
-            text-align: center;
+            color: white;
             line-height: 200px;
+            text-align: center;
             margin: 20px;
         }
     </style>
 </head>
 <body>
-    <div id="area" >
+    <div id='area' >
         <p>Interaja</p>
     </div>
 
     <script>
-        var a = window.document.getElementById("area");
+        var area = window.document.getElementById('area')
 
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrou)
-        a.addEventListener('mouseout', idle)
+        area.addEventListener('click', clicou)
+        area.addEventListener('mouseover', entrou)
+        area.addEventListener('mouseout', saiu)
 
-        function idle() {
-            a.innerText = 'Interaja'
-            a.style.backgroundColor = 'green'
+        function clicou() {
+            area.innerText = 'Clicou';
+            area.style.background = 'red'
         }
-        function clicar() {
-            a.innerHTML = 'Clicou'
-            a.style.backgroundColor = 'red'
+
+        function entrou() {
+            area.innerHTML = 'Entrou'
+            area.style.background = 'blue'
         }
-        function entrou () {
-            a.innerHTML = 'Entrou'
-            a.style.backgroundColor = 'blue'
+
+        function saiu() {
+            area.innerHTML = 'Saiu'
+            area.style.background = 'green'
         }
     </script>
 </body>
