@@ -14,6 +14,6 @@ do {
 */
 
 for (counter=1; counter <= 6 ; counter++) {
-    console.log(`Passso ${counter}`)
+    console.log(`Passo ${counter}`)
 }
 
