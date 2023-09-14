@@ -1,4 +1,4 @@
-var counter = 1
+/*var counter = 1
 
 
  while (counter <= 6) { //Repetição de teste lógico no início
@@ -11,3 +11,9 @@ do {
     console.log(`Passo ${counter}`)
     counter++
 } while(counter <= 8) //Repetição de teste lógico no final
+*/
+
+for (counter=1; counter <= 6 ; counter++) {
+    console.log(`Passso ${counter}`)
+}
+
