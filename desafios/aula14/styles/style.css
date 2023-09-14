@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root {
+    --bg-manha: #946444;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal 20px Arial;
+}
+
+body {
+    background-color: #2a417e;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font: bolder 3em Arial;
+}
+
+section {
+    display: block;
+    margin: auto;
+    width: 600px;
+    background-color: rgb(233, 232, 232);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+    padding: 20px;
+    
+}
+
+div , div p{
+    text-align: center;
+    font: 500 1.25em Arial;
+}
+
+div#msg {
+    margin-bottom: 15px;
+}
+
+footer, footer p{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+}
+
