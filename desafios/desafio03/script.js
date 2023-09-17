@@ -16,7 +16,7 @@ function contar() {
         res.innerHTML = 'Passo vazio! Considerando passo = 1 <br>'
         step.value = 1
     }
-    if (start.value < end.value) {
+    if (start.value < end.value) { //Contagem crescente
       for (
         c = Number(start.value);
         c <= Number(end.value);
@@ -25,7 +25,7 @@ function contar() {
         res.innerHTML += `${c} // `;
         console.log(c);
       }
-    } else {
+    } else { //Contagem decrescente
       for (
         c = Number(start.value);
         c >= Number(end.value);
