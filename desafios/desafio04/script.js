@@ -8,6 +8,7 @@ function calc() {
     for (c = 1; c <= 10; c++) {
       let res = num.value * c;
       item = document.createElement('option')
+      item.value = `tab${c}`
       item.text += ` ${num.value} X ${c} = ${res} `;
       disp.appendChild(item)
     }
