@@ -1,36 +1,44 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font: normal 20px Arial;
+  margin: 0px;
+  padding: 0px;
+  font: normal 18px Arial;
 }
 
 body {
-    background-color: #2a417e;
+  background-color: #2a417e;
 }
 
 header > h1 {
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 2em;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
 }
 
 section {
-    display: block;
-    margin: auto;
-    width: 500px;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+  display: block;
+  margin: auto;
+  width: 550px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+  padding: 10px;
 }
+select#board {
+  margin: 10px 0px;
+}
+
+option, input[type="button"] {
+  font-size: 0.85rem;
+}
+
+
 
 footer {
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-    font-style: italic;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
 }
-

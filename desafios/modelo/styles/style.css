@@ -3,7 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font: normal 20px Arial;
+    font: normal 18px Arial;
 }
 
 body {
@@ -20,11 +20,11 @@ header > h1 {
 section {
     display: block;
     margin: auto;
-    width: 500px;
-    height: 400px;
+    width: 550px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+    padding: 10px;
 }
 
 footer {
@@ -33,4 +33,3 @@ footer {
     margin-top: 30px;
     font-style: italic;
 }
-
