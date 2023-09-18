@@ -28,14 +28,12 @@ section {
     padding: 10px;
 }
 
-div {
-    padding: 5px;
-}
-
 div#disp {
-    width: 250px;
+    max-width: 200px;
+    max-height: 150px;
     margin-top: 10px;
     border: 1px solid black;
+     ;
 }
 
 .btn {
