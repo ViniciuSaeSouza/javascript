@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Identificador de idade</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuadora</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Título</h1>
+      <h1>Tabuada</h1>
     </header>
     <main>
-        <section>
-            <div></div>
-            <div></div>
-        </section>
+      <section>
+        <div>
+          <p>
+            <label for="num">Número: </label>
+            <input type="number" name="num" id="num" />
+            <input type="button" value="Gerar Tabuada" onclick="calc()" class="btn"/>
+          </p>
+        </div>
+        <div id="disp">
+            Resultado:
+        </div>
+      </section>
     </main>
     <footer>
-        <p>© Saesminerais</p>
+      <p>© Saesminerais</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

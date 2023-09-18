@@ -25,6 +25,21 @@ section {
     background-color: white;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+    padding: 10px;
+}
+
+div {
+    padding: 5px;
+}
+
+div#disp {
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.btn {
+    font-size: 0.90em;
 }
 
 footer {
