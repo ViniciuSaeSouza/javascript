@@ -5,7 +5,7 @@ let values = [];
 
 number.addEventListener("keydown", function (enter) {
   if (enter.key === "Enter") {
-    document.querySelector("addBtn").click();
+    document.getElementById("addBtn").click();
   }
 });
 
@@ -27,25 +27,14 @@ function boardCheck(n, v) {
 
 function addToBoard() {
   if (numberCheck(number.value) && !boardCheck(number.value, values)) {
+    values.push(Number(number.value));
     boardValue = document.createElement("option");
-    boardValue.text += `${number.value} adicionado`;
+    boardValue.text = `${number.value} adicionado`;
     board.appendChild(boardValue);
-    values.push(number.value);
+    
   } else {
     window.alert("Número fora do limite ou já presente na lista!");
   }
 }
 
-/*function addToBoard() {
-    if (values.indexOf(number.value) == -1 && number.value > 1 || number.value < 100) {
-      boardValue = document.createElement("option");
-      //boardValue.value =
-      boardValue.text += `${number.value} adicionado`;
-      board.appendChild(boardValue);
-      values.push(number.value)
-      }else{
-      window.alert("Número já adicionado ou fora do limite!")
-      
-    }
-  }
-*/
+
