@@ -3,7 +3,7 @@ let board = document.querySelector("select#board");
 let info = document.querySelector("div#info");
 let values = [];
 
-//Escuta para quando apertar 'Enter' acionar o botão "Adicionar"
+//`Escuta` para quando apertar 'Enter' acionar o botão `Adicionar`
 number.addEventListener("keydown", function (enter) {
   if (enter.key === "Enter") {
     document.getElementById("addBtn").click();
@@ -43,12 +43,14 @@ function addToBoard() {
   number.focus();
 }
 
+//Limpa o elemento 'board' de todos os números adicionados, mantendo o '<option> "Números Adicionados:"</option>'
 function clearBoard() {
   board.innerHTML = "<option>Números adicionados: </option>";
   values = [];
   info.innerHTML = "";
 }
 
+//Função que cálcula: Total, Maior e Menor valor informado, Soma dos valores e a Média deles.
 function calcInfo() {
   if (values.length == 0) {
     window.alert("Adicione valores antes de finalizar!");
