@@ -35,10 +35,35 @@ function addToBoard() {
     boardValue = document.createElement("option");
     boardValue.text = `${number.value} adicionado`;
     board.appendChild(boardValue);
-    
+    info.innerHTML = "";
   } else {
     window.alert("Número fora do limite ou já presente na lista!");
   }
+  number.value = "";
+  number.focus();
 }
 
+function calcInfo() {
+  if (values.length == 0) {
+    window.alert("Adicione valores antes de finalizar!");
+  } else {
+    let total = values.length;
+    let highest = values[0];
+    let lowest = values[0];
+    let sum = 0;
+    let average = 0;
+    for (let pos in values) {
+      sum += values[pos];
+      if (values[pos] > highest) highest = values[pos];
+      if (values[pos] < lowest) lowest = values[pos];
+    }
+    average = sum / total;
+    info.innerHTML = "";
+    info.innerHTML += `<p>Temos ${total} números cadastrados</p>`;
+    info.innerHTML += `<p>O maior valor informado foi ${highest}</p>`;
+    info.innerHTML += `<p>O menor valor informado foi ${lowest}</p>`;
+    info.innerHTML += `<p>Somando todos os valores, temos: ${sum}</p>`;
+    info.innerHTML += `<p>A médias dos valores digitados é: ${average}</p>`;
 
+  }
+}

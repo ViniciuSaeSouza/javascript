@@ -26,14 +26,13 @@ section {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
   padding: 10px;
 }
-select#board {
+select#board, #info, p{
   margin: 10px 0px;
 }
 
 option, input[type="button"] {
   font-size: 0.85rem;
 }
-
 
 
 footer {
