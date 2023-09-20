@@ -30,7 +30,7 @@ select#board, #info, p{
   margin: 10px 0px;
 }
 
-option, input[type="button"] {
+option, .button {
   font-size: 0.85rem;
 }
 

@@ -43,6 +43,12 @@ function addToBoard() {
   number.focus();
 }
 
+function clearBoard() {
+  board.innerHTML = "<option>Números adicionados: </option>";
+  values = [];
+  info.innerHTML = "";
+}
+
 function calcInfo() {
   if (values.length == 0) {
     window.alert("Adicione valores antes de finalizar!");
@@ -64,6 +70,5 @@ function calcInfo() {
     info.innerHTML += `<p>O menor valor informado foi ${lowest}</p>`;
     info.innerHTML += `<p>Somando todos os valores, temos: ${sum}</p>`;
     info.innerHTML += `<p>A médias dos valores digitados é: ${average}</p>`;
-
   }
 }
