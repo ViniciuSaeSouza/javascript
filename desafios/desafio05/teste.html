@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <h1 id='title'>freeCodeCamp Survey Form</h1>
+ <p id='description'>Thank you for taking the time to help us improve the platform</p>
+ <form id='survey-form'>
+  <label for='name' id='name-label'>Name
+    <input type='text' id='name' placeholder='Enter your name' required/>  
+  </label>
+  <label for='email' id='email-label'>Email
+    <input type='email' id='email' placeholder='Enter your email' required/>  
+  </label>
+  <label for='number' id='number-label'>Age
+    <input type='number' id='number' min='13' max='120'  placeholder='Enter your age' required/>
+  </label>
+  <label>
+    Which option best describes your current role?
+   <select id='dropdown'>
+      <option disabled selected value>Select current role</option>
+      <option value='student'>Student</option>
+      <option value='full-time-job'>Full Time Job</option>
+      <option value='full-time-learner'>Full Time Learner</option>
+      <option value='other'>Other</option>
+      <option value='prefer-not-to-say'>Prefer not to say</option>
+    </select>
+  </label>
+  <label> Would you recommend freeCodeCamp to a friend?
+    <label><input type='radio' name='user-recommend'>Definetely</label>
+    <label><input type='radio' name='user-recommend'>Maybe</label>
+    <label><input type='radio' name='user-recommend'>Not sure</label>
+  </label>
+  <label>
+  <label><input type='checkbox' value='Front-end-Projects'>Front-end Projects</label>
+  <label><input type='checkbox' value='Back-end-Projects'>Back-end Projects</label>
+  <label><input type='checkbox' value='Data-Visualization'>Data Visualization</label>
+  <label><input type='checkbox' value='Challenges'>Challenges</label>
+  <label><input type='checkbox' value='Open-Source-Community'>Open Source Community</label>
+  <label><input type='checkbox' value='Gitter-help-rooms'>Gitter help rooms</label>
+  <label><input type='checkbox' value='Videos'>Videos</label>
+  <label><input type='checkbox' value='City-Meetups'>City Meetups</label>
+  <label><input type='checkbox' value='Wiki'>Wiki</label>
+  <label><input type='checkbox' value='Forum'>Forum</label>
+  <label><input type='checkbox' value='Additional Courses'>Additional Courses</label>
+  </label>
+  <textarea placeholder='Enter your comment here...'></textarea>
+  <input type='submit' id='submit' value='Submit'>
+ </form>
+</body>  
+</html>
